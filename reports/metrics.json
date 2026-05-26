@@ -1,15 +1,50 @@
 {
+    "best_model": "gradient_boosting",
+    "holdout_year": 2025,
+    "train_rows": 17536,
+    "test_rows": 5824,
+    "selected_features": [
+        "num__solar_irradiance_today",
+        "num__clear_sky_irradiance_today",
+        "num__temperature_avg_c",
+        "num__temperature_max_c",
+        "num__temperature_min_c",
+        "num__relative_humidity_pct",
+        "num__cloud_cover_pct",
+        "num__surface_pressure_kpa",
+        "num__clearness_index_today",
+        "num__latitude",
+        "num__longitude",
+        "num__month",
+        "num__dayofyear",
+        "num__month_cos",
+        "num__dayofyear_cos",
+        "num__irradiance_utilization_ratio",
+        "num__heat_humidity_index",
+        "cat__region_sul"
+    ],
     "results": {
         "random_forest": {
-            "MAE": 587.3433809937094,
-            "RMSE": 766.8968438259012,
-            "R2": 0.9728898293354963
+            "cv_MAE_mean": 0.8362342328954615,
+            "cv_MAE_std": 0.04196453079357614,
+            "cv_RMSE_mean": 1.1073501251785136,
+            "cv_RMSE_std": 0.045535289473276244,
+            "cv_R2_mean": 0.4885910177092635,
+            "cv_R2_std": 0.029584877954966855,
+            "test_MAE": 0.7728118638244001,
+            "test_RMSE": 1.0458001334505795,
+            "test_R2": 0.5469567980911153
         },
         "gradient_boosting": {
-            "MAE": 564.7378579971844,
-            "RMSE": 736.574234351044,
-            "R2": 0.974991283885195
+            "cv_MAE_mean": 0.826255740632677,
+            "cv_MAE_std": 0.05114037615450315,
+            "cv_RMSE_mean": 1.0957183465792315,
+            "cv_RMSE_std": 0.055255508757502396,
+            "cv_R2_mean": 0.4991089970674384,
+            "cv_R2_std": 0.03737859782227785,
+            "test_MAE": 0.7665711144211262,
+            "test_RMSE": 1.035138371254073,
+            "test_R2": 0.5561471146344884
         }
-    },
-    "best_model": "gradient_boosting"
+    }
 }
