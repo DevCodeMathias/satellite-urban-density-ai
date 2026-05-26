@@ -2,6 +2,8 @@
 
 Pipeline completo de Inteligencia Artificial e Machine Learning aplicado a um problema real da Economia Espacial: **prever o potencial solar do proximo dia em grandes centros urbanos brasileiros usando dados orbitais da NASA POWER API**.
 
+Aplicacao publicada: `https://satellite-urban-density-ai-gs.streamlit.app/`
+
 ## 1. Contexto do problema
 
 A Economia Espacial nao se resume a foguetes e satelites. Um dos seus pilares mais importantes e o uso de dados de observacao da Terra para apoiar decisoes em energia, planejamento urbano, agricultura, seguros e infraestrutura.
@@ -51,7 +53,7 @@ Sao Paulo, Rio de Janeiro, Belo Horizonte, Brasilia, Goiania, Cuiaba, Campo Gran
 
 O alvo do modelo e:
 
-- `target_next_day_ghi`: irradiancia solar total do **proximo dia** em `kWh/m²/dia`
+- `target_next_day_ghi`: irradiancia solar total do **proximo dia** em `kWh/m2/dia`
 
 Tambem foi gerada uma variavel derivada de negocio:
 
@@ -151,11 +153,13 @@ A aplicacao foi criada em **Streamlit** e permite:
 
 ### Link da aplicacao em funcionamento
 
-Depois de executar localmente, a aplicacao fica disponivel em:
+Aplicacao publicada em Streamlit Community Cloud:
+
+- `https://satellite-urban-density-ai-gs.streamlit.app/`
+
+Para execucao local durante o desenvolvimento:
 
 - `http://localhost:8501`
-
-Se quiser publicar externamente, voce pode subir a mesma app no Streamlit Community Cloud, Render ou expor localmente com Ngrok.
 
 ## 9. Como executar
 
